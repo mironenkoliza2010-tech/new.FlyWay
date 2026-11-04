@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>FlyWay</title>
+</head>
+<body>
+       
+       <header>
+     <nav class="nav-hotel">    
+        <a class="nav-link2" class="nav-link4" href="hotel.html">Назад</a>
+     </nav>
+    
+
+       </header>
+      
+    <menu>
+      <div class="booking-container">
+  <h2 class="booking-title">Забронювати номер</h2>
+  
+  <form class="booking-form" action="#" method="POST">
+    
+    <!-- Вибір дати -->
+    <div class="form-row">
+      <div class="form-group">
+        <label for="check-in">Дата заїзду</label>
+        <input type="date" id="check-in" name="check_in" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="check-out">Дата виїзду</label>
+        <input type="date" id="check-out" name="check_out" required>
+      </div>
+    </div>
+
+    <!-- Категорія номера та Кількість гостей -->
+    <div class="form-row">
+      <div class="form-group">
+        <label for="room-type">Категорія номера</label>
+        <select id="room-type" name="room_type" required>
+          <option value="" disabled selected>Оберіть номер...</option>
+          <option value="economy">Економ (від 50$ / ніч)</option>
+          <option value="standard">Стандарт (від 90$ / ніч)</option>
+          <option value="suite">Люкс (від 180$ / ніч)</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="guests">Кількість гостей</label>
+        <select id="guests" name="guests" required>
+          <option value="1">1 особа</option>
+          <option value="2">2 особи</option>
+          <option value="3">3 особи</option>
+          <option value="4">4+ особи</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Контактні дані -->
+    <div class="form-group">
+      <label for="guest-name">Прізвище та Ім'я</label>
+      <input type="text" id="guest-name" name="guest_name" placeholder="Іванов Іван" required>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="guest-phone">Номер телефону</label>
+        <input type="tel" id="guest-phone" name="guest_phone" placeholder="+380" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="guest-email">Електронна пошта</label>
+        <input type="email" id="guest-email" name="guest_email" placeholder="example@mail.com" required>
+      </div>
+    </div>
+
+    <!-- Додаткові побажання -->
+    <div class="form-group">
+      <label for="comments">Додаткові побажання (необов'язково)</label>
+      <textarea id="comments" name="comments" rows="3" placeholder="Ранній заїзд, дитяче ліжко, трансфер..."></textarea>
+    </div>
+
+    <!-- Кнопка відправки -->
+    <button type="submit" class="booking-btn">Надіслати заявку</button>
+  </form>
+</div>
+
+
+
+    </menu>
+
+       <footer> 
+
+
+       </footer>
+
+
+</body>
+</html>
